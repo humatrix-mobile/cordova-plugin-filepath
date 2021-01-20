@@ -378,7 +378,7 @@ public class FilePath extends CordovaPlugin {
                     contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
                 } else {
                   if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                    contentUri = MediaStore.Downloads.EXTERNAL_CONTENT_URI;
+                    contentUri = MediaStore.Files.getContentUri("external");
                   }
                 }
 
